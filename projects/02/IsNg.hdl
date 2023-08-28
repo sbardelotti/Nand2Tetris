@@ -1,7 +1,9 @@
+//This chip is intended to fix the "sub-bus of an internal node cannot be used" error.
+
 CHIP IsNg {
     IN in[16];
     OUT out;
-
+    
     PARTS:
     // Put your code here:
     And(a=in[15], b=true, out=out);
